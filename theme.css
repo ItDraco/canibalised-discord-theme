@@ -313,7 +313,7 @@
 
 /* window controls */
 .theme-dark .winButtonClose-3Q8ZH5 {
-  top: -1.5px;
+  top: -100.5px;
   right: 20px;
   padding: 5px;
   margin: 5px;
@@ -324,7 +324,7 @@
   transition: 0.2s;
 }
 .theme-dark .winButtonClose-3Q8ZH5:hover {
-  top: -1.5px;
+  top: -100.5px;
   right: 20px;
   padding: 5px;
   margin: 5px;
@@ -336,7 +336,7 @@
   backdrop-filter: none;
 }
 .theme-dark .winButtonMinMax-3RsPUg:nth-child(3) {
-  top: -1.5px;
+  top: -100.5px;
   right: 10px;
   padding: 5px;
   margin: 5px;
