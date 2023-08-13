@@ -312,7 +312,75 @@
 }
 
 /* window controls */
-
+.theme-dark .winButtonClose-3Q8ZH5 {
+  top: -3.5px;
+  right: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  transition: 0.2s;
+}
+.theme-dark .winButtonClose-3Q8ZH5:hover {
+  top: -3.5px;
+  right: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+  background: transparent;
+  transform: rotate(45deg) !important;
+  transition: 0.1s;
+  backdrop-filter: none;
+}
+.theme-dark .winButtonMinMax-3RsPUg:nth-child(3) {
+  top: -3.5px;
+  right: 10px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px;
+  color: #fff;
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  transition: 0.2s;
+}
+.theme-dark .winButtonMinMax-3RsPUg:nth-child(3):hover {
+  top: -3.5px;
+  right: 10px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px;
+  color: #fff;
+  background: transparent;
+  transform: rotate(45deg) !important;
+  transition: 0.1s;
+  backdrop-filter: none;
+}
+.theme-dark .winButtonMinMax-3RsPUg:nth-child(2n) {
+  top: -3.5px;
+  right: 0px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  transition: 0.2s;
+}
+.theme-dark .winButtonMinMax-3RsPUg:nth-child(2n):hover {
+  top: -3.5px;
+  right: 0px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+  background: transparent;
+  transform: rotate(45deg) !important;
+  transition: 0.1s;
+  backdrop-filter: none;
+}
 .theme-dark {
 	--activity-card-background: blue;
 	--android-navigation-bar-background: blue;
