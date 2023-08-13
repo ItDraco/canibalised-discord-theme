@@ -382,10 +382,6 @@
   backdrop-filter: none;
 }
 .theme-dark {
-	--activity-card-background: blue;
-	--android-navigation-bar-background: blue;
-	--android-navigation-scrim-background: blue;
-	--android-ripple: blue;
 	--background-accent: var(--bg-1);
 	--background-floating: var(--primary-800);
 	--background-mentioned: var(--mention);
@@ -401,7 +397,6 @@
 	--background-modifier-active: var(--active);
 	--background-modifier-hover: var(--hover);
 	--background-modifier-selected: var(--active);
-	--background-nested-floating: blue;
 	--background-primary: var(--bg-4);
 	--background-secondary: var(--bg-4);
 	--background-secondary-alt: var(--bg-4);
@@ -465,9 +460,6 @@
 	--channel-text-area-placeholder: var(--text-5);
 	--channels-default: var(--text-4);
 	--channeltextarea-background: var(--bg-3);
-	--chat-background: blue;
-	--chat-border: blue;
-	--chat-input-container-background: blue;
 	--control-brand-foreground: var(--brand-360);
 	--control-brand-foreground-new: var(--brand-360);
 	--creator-revenue-icon-gradient-end: var(--teal-430);
@@ -491,7 +483,6 @@
 	--display-banner-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
 	--divider-strong: hsl(var(--white-500-hsl) / 0.16);
 	--divider-subtle: hsl(var(--white-500-hsl) / 0.08);
-	--focus-primary: var(--blue-345);
 	--forum-post-extra-media-count-container-background: hsl(
 		var(--primary-660-hsl) / 0.8
 	);
@@ -500,12 +491,9 @@
 	--header-secondary: var(--text-4);
 	--home-background: var(--bg-4);
 	--home-card-resting-border: none;
-	--info-box-background: hsl(var(--blue-345-hsl) / 0.1);
 	--info-danger-background: hsl(var(--red-400-hsl) / 0.1);
 	--info-danger-foreground: var(--red-400);
 	--info-danger-text: var(--white-500);
-	--info-help-background: hsl(var(--blue-345-hsl) / 0.1);
-	--info-help-foreground: var(--blue-345);
 	--info-help-text: var(--white-500);
 	--info-positive-background: hsl(var(--green-360-hsl) / 0.1);
 	--info-positive-foreground: var(--green-360);
@@ -594,7 +582,6 @@
 	--redesign-only-background-active: var(--primary-530);
 	--redesign-only-background-default: var(--primary-700);
 	--redesign-only-background-overlay: var(--primary-600);
-	--redesign-only-background-raised: blue;
 	--redesign-only-background-sunken: var(--primary-800);
 	--scrollbar-auto-scrollbar-color-thumb: var(--bg-3);
 	--scrollbar-auto-scrollbar-color-track: transparent;
@@ -619,8 +606,6 @@
 	--status-warning-text: var(--black-500);
 	--text-brand: var(--brand-360);
 	--text-danger: var(--red-345);
-	--text-link: var(--blue-345);
-	--text-link-low-saturation: var(--blue-330);
 	--text-muted: var(--text-5);
 	--text-normal: var(--text-3);
 	--text-positive: var(--green-330);
@@ -630,7 +615,6 @@
 		var(--primary-700-hsl) / 0.5
 	);
 	--white-500: var(--text-1);
-	--blue-345: var(--accent-1);
 	--brand-260: var(--accent-2);
 	--brand-360: var(--accent-2);
 	--brand-500: var(--accent-3);
