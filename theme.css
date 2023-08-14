@@ -5,13 +5,7 @@
 	--roundness: 16px;
 
 	/* color of links */
-	--accent-1: hsl(190, 70%, 60%);
-	/* color of unread dividers and some indicators */
-	--accent-2: hsl(190, 70%, 50%);
-	/* color of accented buttons */
-	--accent-3: hsl(190, 70%, 40%);
-	/* color of accented buttons when hovered */
-	--accent-4: hsl(190, 70%, 30%);
+	--accent-1: hsl(190, 100%, 43%);
 	/* color of accented buttons when clicked */
 	--accent-5: hsl(190, 70%, 20%);
 
@@ -58,17 +52,6 @@
 
 /* fix colors */
 .mentioned-Tre-dv:before /* mention message left edge */,
-.container-1QtPKm.checked-16gMAN /* settings checkbuttons */ {
-	background: var(--accent-3) !important;
-}
-.numberBadge-37OJ3S /* dm unread number */ {
-	background: var(--accent-2) !important;
-	/* color: var(--bg-4); */
-}
-.expandedFolderIconWrapper-3RwQpD svg /* folder icons */,
-.strikethrough-2Kl6HF /* mute button strikethrough */ {
-	color: var(--accent-2) !important;
-}
 .folderIconWrapper-1oRIZr {
 	background-color: transparent !important;
 }
@@ -77,12 +60,6 @@
 }
 .clickable-vvKY2q .header-3OsQeK:hover, .selected-1GtAC5 .header-3OsQeK /* server name hover */ {
 	background: var(--message-hover);
-}
-.divider-2rZFJK /* unread dividers */ {
-	--divider-color: var(--accent-2);
-}
-.iconBadge-3Mmg92 /* dm button */ {
-	background: var(--accent-2) !important;
 }
 .theme-dark .container-2IKOsH /* browse channels back */,
 .theme-dark .header-3xB4vB /* browse channels header */,
@@ -299,7 +276,7 @@
 	display: none;
 }
 .wordmarkWindows-2dq6rw::after {
-	content: 'Midnight';
+	content: '';
 	display: block;
 	position: relative;
 	width: 200px;
@@ -311,77 +288,39 @@
 	color: transparent;
 }
 
-/* window controls */
-.theme-dark .winButtonClose-3Q8ZH5 {
-  top: -100.5px;
-  right: 20px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 0px 5px 5px 0px;
-  color: #fff;
-  background: var(--window-colour);
-  backdrop-filter: blur(var(--window-blur));
-  transition: 0.2s;
+/* window buttons (close, minimize, maximize) */
+.winButtonClose-3Q8ZH5:hover{
+	transform: rotate(45deg) !important;
+	background: transparent;
+  	transition: 0.1s;
 }
-.theme-dark .winButtonClose-3Q8ZH5:hover {
-  top: -100.5px;
-  right: 20px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 0px 5px 5px 0px;
-  color: #fff;
-  background: transparent;
-  transform: rotate(45deg) !important;
-  transition: 0.1s;
-  backdrop-filter: none;
+.winButtonMinMax-3RsPUg:nth-child(3):hover{
+	transform: rotate(45deg) !important;
+	transition: 0.1s;
 }
-.theme-dark .winButtonMinMax-3RsPUg:nth-child(3) {
-  top: -100.5px;
-  right: 10px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 0px;
-  color: #fff;
-  background: var(--window-colour);
-  backdrop-filter: blur(var(--window-blur));
-  transition: 0.2s;
+.winButtonMinMax-3RsPUg:nth-child(2n):hover{
+	transform: rotate(45deg) !important;
+	transition: 0.1s;
 }
-.theme-dark .winButtonMinMax-3RsPUg:nth-child(3):hover {
-  top: -3.5px;
-  right: 10px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 0px;
-  color: #fff;
-  background: transparent;
-  transform: rotate(45deg) !important;
-  transition: 0.1s;
-  backdrop-filter: none;
+
+/* user area section*/
+.panels-3wFtMD > .container-YkUktl div button{
+    opacity: 0%!important;
+    transition: all 0.3s;
 }
-.theme-dark .winButtonMinMax-3RsPUg:nth-child(2n) {
-  top: -3.5px;
-  right: 0px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px 0px 0px 5px;
-  color: #fff;
-  background: var(--window-colour);
-  backdrop-filter: blur(var(--window-blur));
-  transition: 0.2s;
+
+.panels-3wFtMD > .container-YkUktl:hover div button{
+    opacity: 100%!important;
 }
-.theme-dark .winButtonMinMax-3RsPUg:nth-child(2n):hover {
-  top: -3.5px;
-  right: 0px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px 0px 0px 5px;
-  color: #fff;
-  background: transparent;
-  transform: rotate(45deg) !important;
-  transition: 0.1s;
-  backdrop-filter: none;
-}
+
+
+
+
 .theme-dark {
+	--activity-card-background: blue;
+	--android-navigation-bar-background: blue;
+	--android-navigation-scrim-background: blue;
+	--android-ripple: blue;
 	--background-accent: var(--bg-1);
 	--background-floating: var(--primary-800);
 	--background-mentioned: var(--mention);
@@ -397,6 +336,7 @@
 	--background-modifier-active: var(--active);
 	--background-modifier-hover: var(--hover);
 	--background-modifier-selected: var(--active);
+	--background-nested-floating: blue;
 	--background-primary: var(--bg-4);
 	--background-secondary: var(--bg-4);
 	--background-secondary-alt: var(--bg-4);
@@ -460,6 +400,9 @@
 	--channel-text-area-placeholder: var(--text-5);
 	--channels-default: var(--text-4);
 	--channeltextarea-background: var(--bg-3);
+	--chat-background: blue;
+	--chat-border: blue;
+	--chat-input-container-background: blue;
 	--control-brand-foreground: var(--brand-360);
 	--control-brand-foreground-new: var(--brand-360);
 	--creator-revenue-icon-gradient-end: var(--teal-430);
@@ -483,6 +426,7 @@
 	--display-banner-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
 	--divider-strong: hsl(var(--white-500-hsl) / 0.16);
 	--divider-subtle: hsl(var(--white-500-hsl) / 0.08);
+	--focus-primary: var(--blue-345);
 	--forum-post-extra-media-count-container-background: hsl(
 		var(--primary-660-hsl) / 0.8
 	);
@@ -491,9 +435,12 @@
 	--header-secondary: var(--text-4);
 	--home-background: var(--bg-4);
 	--home-card-resting-border: none;
+	--info-box-background: hsl(var(--blue-345-hsl) / 0.1);
 	--info-danger-background: hsl(var(--red-400-hsl) / 0.1);
 	--info-danger-foreground: var(--red-400);
 	--info-danger-text: var(--white-500);
+	--info-help-background: hsl(var(--blue-345-hsl) / 0.1);
+	--info-help-foreground: var(--blue-345);
 	--info-help-text: var(--white-500);
 	--info-positive-background: hsl(var(--green-360-hsl) / 0.1);
 	--info-positive-foreground: var(--green-360);
@@ -582,6 +529,7 @@
 	--redesign-only-background-active: var(--primary-530);
 	--redesign-only-background-default: var(--primary-700);
 	--redesign-only-background-overlay: var(--primary-600);
+	--redesign-only-background-raised: blue;
 	--redesign-only-background-sunken: var(--primary-800);
 	--scrollbar-auto-scrollbar-color-thumb: var(--bg-3);
 	--scrollbar-auto-scrollbar-color-track: transparent;
@@ -599,13 +547,14 @@
 	--status-offline: var(--primary-360);
 	--status-online: var(--green-360);
 	--status-positive: var(--green-360);
-	--status-positive-background: var(--accent-3);
 	--status-positive-text: var(--white-500);
 	--status-warning: var(--yellow-300);
 	--status-warning-background: var(--yellow-300);
 	--status-warning-text: var(--black-500);
 	--text-brand: var(--brand-360);
 	--text-danger: var(--red-345);
+	--text-link: var(--blue-345);
+	--text-link-low-saturation: var(--blue-330);
 	--text-muted: var(--text-5);
 	--text-normal: var(--text-3);
 	--text-positive: var(--green-330);
@@ -615,10 +564,7 @@
 		var(--primary-700-hsl) / 0.5
 	);
 	--white-500: var(--text-1);
-	--brand-260: var(--accent-2);
-	--brand-360: var(--accent-2);
-	--brand-500: var(--accent-3);
-	--brand-560: var(--accent-4);
+	--blue-345: var(--accent-1);
 	--brand-600: var(--accent-5);
 
 	--primary-130: var(--text-2);
