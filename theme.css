@@ -3,17 +3,14 @@
 	--spacing: 12px;
 	/* radius of round corners */
 	--roundness: 16px;
-
 	/* color of links */
 	--accent-1: hsl(190, 100%, 43%);
 	/* color of accented buttons when clicked */
 	--accent-5: hsl(190, 70%, 20%);
-
 	/* color of mentions and messages that mention you */
 	--mention: hsla(190, 60%, 50%, 0.1);
 	/* color of mentions and messages that mention you when hovered */
 	--mention-hover: hsla(190, 60%, 50%, 0.05);
-
 	/* color of bright text on colored buttons */
 	--text-1: hsl(220, 40%, 90%);
 	/* color of headings and important text */
@@ -24,16 +21,12 @@
 	--text-4: hsl(220, 15%, 40%);
 	/* color of muted channels/chats and timestamps */
 	--text-5: hsl(220, 15%, 25%);
-
-	/* color of dark buttons when clicked */
-	--bg-1: hsl(220, 15%, 20%);
 	/* color of dark buttons */
 	--bg-2: hsl(220, 15%, 16%);
 	/* color of spacing around panels and secondary elements */
 	--bg-3: hsl(220, 15%, 13%);
 	/* main background color */
 	--bg-4: hsl(220, 15%, 10%);
-
 	/* color of channels and icon buttons when hovered */
 	--hover: hsla(230, 20%, 40%, 0.1);
 	/* color of channels and icon buttons when clicked or selected */
@@ -48,15 +41,6 @@
 }
 .platform-win .base-2jDfDU {
 	margin-top: 0;
-}
-
-/* fix colors */
-.mentioned-Tre-dv:before /* mention message left edge */,
-.folderIconWrapper-1oRIZr {
-	background-color: transparent !important;
-}
-.container-1QtPKm /* settings checkbuttons default */ {
-	background: var(--bg-1) !important;
 }
 .clickable-vvKY2q .header-3OsQeK:hover, .selected-1GtAC5 .header-3OsQeK /* server name hover */ {
 	background: var(--message-hover);
@@ -109,10 +93,8 @@
 	--text-normal: var(--text-3); /* color of button text */
 	--background-modifier-accent: none; /* remove borders */
 	--background-modifier-hover: var(--bg-2); /* button hover */
-	--background-modifier-active: var(--bg-1); /* button active */
 	--button-secondary-background: var(--bg-2); /* join a server button */
 	--button-secondary-background-active: var(--text-5);
-	--button-secondary-background-hover: var(--bg-1);
 	--input-background: var(--bg-3); /* background of the invite link textbox */
 	--input-placeholder-text: var(
 		--text-5
@@ -327,27 +309,91 @@
 	transition: all 0.3s;
 }
 
-.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF {
+.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF{
     opacity: 100%!important;
 	left: 100px;
 	transition: all 0.3s;
 }
 
 /*Voice channel settings container*/
-.panels-3wFtMD > .container-1zzFcN .flex-2S1XBF {
-	height: 0px;
+.panels-3wFtMD .container-1zzFcN, .panels-3wFtMD .panel-2ZFCRb{
+	border-width: 0px;
+}
 
+/* member list and friend DMs hover effect */
+.clickable-28SzVr:hover,
+.interactive-1vLZ_I:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+.clickable-28SzVr,
+.interactive-1vLZ_I {
+  transition: all 0.3s;
 }
 
 
 
+/* colored links */
+/* YouTube */
+[href*="youtu.be"],
+[href*="youtube.com"] {
+  color: #c4302b !important;
+}
+/* Twitch */
+[href*="twitch.tv"] {
+  color: #b700ff !important;
+}
+/* Discord */
+[href*="discord.com/channels/"] {
+  color: #7289da !important;
+}
+[href*="discord.com/channels/"]::before {
+  color: #603cff;
+}
+[href*="betterdiscord.app/"],
+[href*="discord.gg/"],
+[href*="discord.com/"],
+[href*="media.discordapp.net/"],
+[href*="cdn.discordapp.com/"] {
+  color: #7289da !important;
+}
+/* Twitter */
+[href*="twitter.com/"] {
+  color: #00acee !important;
+}
+/* GitHub */
+[href*="github.com"] {
+  color: #00f0a8 !important;
+}
+/* Imgur */
+[href*="i.imgur.com"] {
+  color: #89c623 !important;
+}
+/* Steam */
+[href*="store.steampowered.com"],
+[href*="https://s.team"],
+[href*="steamcommunity.com/"] {
+  color: #1b2838 !important;
+}
+/* Spotify */
+[href*="spotify.com"],
+[href*="open.spotify.com"] {
+  color: #13b94a !important;
+}
+/* SoundCloud */
+[href*="soundcloud.com"] {
+  color: #ff5500 !important;
+}
+/* Tiktok */
+[href*="tiktok.com"] {
+  color: #fe2c56 !important;
+}
 
 .theme-dark {
 	--activity-card-background: blue;
 	--android-navigation-bar-background: blue;
 	--android-navigation-scrim-background: blue;
 	--android-ripple: blue;
-	--background-accent: var(--bg-1);
 	--background-floating: var(--primary-800);
 	--background-mentioned: var(--mention);
 	--background-mentioned-hover: var(--mention-hover);
@@ -406,10 +452,7 @@
 	--button-outline-positive-text-active: var(--white-500);
 	--button-outline-positive-text-hover: var(--white-500);
 	--button-outline-primary-background: none;
-	--button-outline-primary-background-active: var(--bg-1);
 	--button-outline-primary-background-hover: var(--bg-2);
-	--button-outline-primary-border: var(--bg-1);
-	--button-outline-primary-border-active: var(--bg-1);
 	--button-outline-primary-border-hover: var(--bg-2);
 	--button-outline-primary-text: var(--text-3);
 	--button-outline-primary-text-active: var(--text-2);
@@ -421,7 +464,6 @@
 	--button-secondary-background: var(--bg-2);
 	--button-secondary-background-active: var(--text-5);
 	--button-secondary-background-disabled: var(--bg-3);
-	--button-secondary-background-hover: var(--bg-1);
 	--channel-icon: var(--text-4);
 	--channel-text-area-placeholder: var(--text-5);
 	--channels-default: var(--text-4);
