@@ -304,13 +304,39 @@
 }
 
 /* user area section*/
-.panels-3wFtMD > .container-YkUktl div button{
+.panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW {
+	position: absolute;
+	left: 75px;
+	transition: all 0.3s;
+}
+.panels-3wFtMD > .container-YkUktl:hover .avatarWrapper-1B9FTW {
+	position: absolute;
+	left: 8px;
+	transition: all 0.3s;
+}
+.panels-3wFtMD > .container-YkUktl .flex-2S1XBF {
+	position: absolute;
     opacity: 0%!important;
-    transition: all 0.3s;
+	left: 200px;
+	transition: all 0.3s;
+}
+.panels-3wFtMD > .container-YkUktl .flex-2S1XBF {
+	position: absolute;
+    opacity: 0%!important;
+	left: 200px;
+	transition: all 0.3s;
 }
 
-.panels-3wFtMD > .container-YkUktl:hover div button{
+.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF {
     opacity: 100%!important;
+	left: 100px;
+	transition: all 0.3s;
+}
+
+/*Voice channel settings container*/
+.panels-3wFtMD > .container-1zzFcN .flex-2S1XBF {
+	height: 0px;
+
 }
 
 
